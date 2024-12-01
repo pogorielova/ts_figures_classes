@@ -16,11 +16,6 @@ export class Triangle implements Figure {
     public b: number,
     public c: number,
   ) {
-    this.color = color;
-    this.a = a;
-    this.b = b;
-    this.c = c;
-
     if (a <= 0 || b <= 0 || c <= 0) {
       throw new Error('Lengths must be greater than 0');
     }
@@ -45,9 +40,6 @@ export class Circle implements Figure {
     public color: Color,
     public radius: number,
   ) {
-    this.color = color;
-    this.radius = radius;
-
     if (radius <= 0) {
       throw new Error('Radius should be greater than 0');
     }
@@ -68,10 +60,6 @@ export class Rectangle implements Figure {
     public width: number,
     public height: number,
   ) {
-    this.color = color;
-    this.width = width;
-    this.height = height;
-
     if (width <= 0 || height <= 0) {
       throw new Error('Length must be greater than 0');
     }
